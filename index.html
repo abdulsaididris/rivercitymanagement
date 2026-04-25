@@ -62,13 +62,17 @@
                     <i data-lucide="building-2"></i>
                     River City <span>Management</span>
                 </a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i data-lucide="menu"></i>
+                </div>
                 <ul class="nav-links">
                     <li><a href="#services">Services</a></li>
                     <li><a href="#security">Security</a></li>
                     <li><a href="#blog">Insights</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li class="mobile-only"><a href="#portal" class="btn-portal">Client Portal</a></li>
                 </ul>
-                <a href="#portal" class="btn-portal">Client Portal</a>
+                <a href="#portal" class="btn-portal nav-cta">Client Portal</a>
             </nav>
         </div>
     </header>
@@ -93,7 +97,7 @@
                 <h2>Comprehensive Property Services</h2>
                 <p>Everything you need to maximize your Edmonton property investment.</p>
             </div>
-            <div class="grid">
+            <div class="grid services-grid">
                 <div class="card glass">
                     <i data-lucide="key"></i>
                     <h3>Residential Rentals</h3>
@@ -130,23 +134,23 @@
         <!-- Security & Delivery Systems Section -->
         <section id="security" class="portal-showcase">
             <div class="container">
-                <div class="grid" style="align-items: center;">
+                <div class="grid security-grid">
                     <div class="text-content">
                         <h2>Next-Gen Security & Deliveries</h2>
                         <p>We've developed proprietary systems to tackle the unique challenges of Edmonton's modern buildings.</p>
-                        <ul style="list-style: none; margin-top: 2rem;">
-                            <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
-                                <i data-lucide="package-check" style="color: var(--primary-light);"></i>
+                        <ul class="security-list">
+                            <li>
+                                <i data-lucide="package-check"></i>
                                 <div>
                                     <strong>Smart Delivery Management</strong>
-                                    <p style="color: var(--text-gray);">Automated notifications and secure parcel lockers for every resident.</p>
+                                    <p>Automated notifications and secure parcel lockers for every resident.</p>
                                 </div>
                             </li>
-                            <li style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
-                                <i data-lucide="eye" style="color: var(--primary-light);"></i>
+                            <li>
+                                <i data-lucide="eye"></i>
                                 <div>
                                     <strong>24/7 Digital Concierge</strong>
-                                    <p style="color: var(--text-gray);">Integrated surveillance and smart access control at your fingertips.</p>
+                                    <p>Integrated surveillance and smart access control at your fingertips.</p>
                                 </div>
                             </li>
                         </ul>
@@ -167,20 +171,22 @@
             <div class="mockup-container">
                 <img src="portal-mockup.png" alt="Client Portal Dashboard" class="mockup" style="max-width: 900px; margin: 0 auto; display: block;">
             </div>
+        </section>
+
         <!-- Why Choose Us SEO Section -->
-        <section class="container">
-            <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem;">
+        <section class="container why-choose-us">
+            <div class="grid split-grid">
                 <div class="image-content">
-                    <img src="hero-bg.png" alt="Modern Edmonton Skyline - Premium Edmonton Property Management" class="mockup" style="border-radius: 20px;">
+                    <img src="hero-bg.png" alt="Modern Edmonton Skyline - Premium Edmonton Property Management" class="mockup">
                 </div>
                 <div class="text-content">
                     <h2>Expert Edmonton Property Management</h2>
                     <p>When it comes to <strong>Edmonton property management</strong>, River City Management stands alone. We combine local expertise with cutting-edge technology to protect your investment and maximize your returns.</p>
                     <p style="margin-top: 1rem;">Our team understands the unique challenges of the Edmonton rental market, from seasonal maintenance to neighborhood-specific tenant placement. Whether you own a single condo or a multi-family building, we provide the localized care your property deserves.</p>
-                    <ul style="list-style: none; margin-top: 2rem;">
-                        <li style="margin-bottom: 1rem; display: flex; gap: 1rem;"><i data-lucide="check-circle" style="color: var(--primary-light);"></i> Local Edmonton Market Knowledge</li>
-                        <li style="margin-bottom: 1rem; display: flex; gap: 1rem;"><i data-lucide="check-circle" style="color: var(--primary-light);"></i> 24/7 Edmonton-Based Support</li>
-                        <li style="margin-bottom: 1rem; display: flex; gap: 1rem;"><i data-lucide="check-circle" style="color: var(--primary-light);"></i> Specialized Condo Management Services</li>
+                    <ul class="check-list">
+                        <li><i data-lucide="check-circle"></i> Local Edmonton Market Knowledge</li>
+                        <li><i data-lucide="check-circle"></i> 24/7 Edmonton-Based Support</li>
+                        <li><i data-lucide="check-circle"></i> Specialized Condo Management Services</li>
                     </ul>
                 </div>
             </div>
