@@ -68,6 +68,32 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all other items
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                const otherIcon = otherItem.querySelector('i');
+                if (otherIcon) {
+                    otherIcon.setAttribute('data-lucide', 'chevron-down');
+                }
+            });
+
+            if (!isActive) {
+                item.classList.add('active');
+                const icon = item.querySelector('i');
+                if (icon) {
+                    icon.setAttribute('data-lucide', 'chevron-up');
+                }
+            }
+            lucide.createIcons();
+        });
+    });
+
     // Contact Form Submission (Web3Forms AJAX)
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
